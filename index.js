@@ -37,7 +37,6 @@ const dataObj = JSON.parse(data);
 
 
 
-
 const server = http.createServer((req, res) => {
     const { query, pathname } = url.parse(req.url, true);
 
