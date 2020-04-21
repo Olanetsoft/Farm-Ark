@@ -2,6 +2,7 @@ const fs = require('fs');
 const http = require('http');
 const url = require('url');
 
+const slug = require('slugify');
 
 const replaceTemplate = (temp, product) => {
     let output = temp.replace(/{%PRODUCTNAME%}/g, product.productName);
